@@ -13,11 +13,9 @@ import androidx.glance.text.*
 import androidx.glance.unit.ColorProvider
 import com.example.energyflexandroid.MainActivity
 
-// ─────────────────────────────────────────────────────────────────────────────
-// Shared composable primitives for EnergyFlex widgets
-// ─────────────────────────────────────────────────────────────────────────────
+// shared composable primitives for EnergyFlex widgets
 
-/** Pill badge: "⚡ EXCELLENT" */
+/** fill badge: "⚡ EXCELLENT" */
 @Composable
 fun RatingBadge(rating: Rating) {
     val icon = when (rating) {
@@ -86,7 +84,7 @@ fun RenewableHero(
 
 enum class HeroSize { SMALL, MEDIUM, LARGE }
 
-/** Carbon pill: "0.7 kg CO₂" */
+/** carbon pill: "0.7 kg CO₂" */
 @Composable
 fun CarbonPill(kg: Float, compact: Boolean = false) {
     Row(
@@ -164,7 +162,7 @@ private fun LegendDot(color: Color, label: String) {
     }
 }
 
-/** Stat column: value + sub-label (used in large widget stat row) */
+/** stat column: value + sub-label (used in large widget stat row) */
 @Composable
 fun StatColumn(value: String, label: String, valueColor: Color = WidgetColors.textPrimary) {
     Column {
@@ -197,7 +195,7 @@ fun WidgetDivider() {
     ) {}
 }
 
-/** App name header row shared by medium + large */
+/** app name header row shared by medium + large */
 @Composable
 fun AppHeader(dateLabel: String = "") {
     Row(
@@ -205,7 +203,7 @@ fun AppHeader(dateLabel: String = "") {
         verticalAlignment = Alignment.Vertical.CenterVertically,
         horizontalAlignment = Alignment.Start
     ) {
-        // Logo mark
+        // logo mark
         Box(
             modifier = GlanceModifier
                 .size(16.dp)
