@@ -6,5 +6,4 @@ import androidx.glance.appwidget.GlanceAppWidgetReceiver
 class EnergyFlexWidgetReceiver : GlanceAppWidgetReceiver() {
     override val glanceAppWidget: GlanceAppWidget
         get() = EnergyFlexWidget()
-
 }
